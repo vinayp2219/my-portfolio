@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pabbu Vinay Goud | Portfolio</title>
+  <link rel="icon" type="image/png" href="icons/port.png"">
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -239,6 +240,17 @@
       typeSpeed: 70,
       backSpeed: 40,
       loop: true
+    });
+  </script>
+  <script>
+    const originalTitle = document.title;
+  
+    window.addEventListener("blur", () => {
+      document.title = "👋 Come back!!";
+    });
+  
+    window.addEventListener("focus", () => {
+      document.title = originalTitle;
     });
   </script>
   <script>
