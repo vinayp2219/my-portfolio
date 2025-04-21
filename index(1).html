@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pabbu Vinay Goud | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      scroll-margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Vinay<span>Goud</span></div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact" class="contact-btn">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id = "home" class="home-content">
+    <div class="home-text">
+      <h1>Hi, I'm Pabbu Vinay Goud</h1>
+      <h2><span id="typed-text"></span></h2>
+      <p>Aspiring Data Analyst & Engineer building interactive projects and insights-driven apps.</p>
+      <a href="Vinay_Goud_CV.pdf" class="btn">Download CV</a>
+    </div>
+    <div class="photo-container">
+        <img src="my.png" alt="Vinay Goud" class="profile-pic" />
+    </div>      
+  </section>
+  
+  
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="main-container">
+        <div class="about-img">
+            <img src="about.jpeg" alt="About Me" />
+        </div>
+      <div class="content">
+        <h1>About <span>Me</span></h1>
+        <p>I'm a highly motivated and curious individual with a strong passion for data, technology, and problem-solving. As a student driven by innovation, I strive to uncover meaningful patterns in data and turn them into impactful insights that drive decision-making. With a growing foundation in data analysis, engineering concepts, and programming, I enjoy exploring tools like Python, Excel, and SQL to derive clarity from complexity. My journey so far has been an exciting blend of continuous learning, collaboration, and real-world project work. Outside of academics, I'm always seeking new challenges—whether it's building interactive visualizations, diving into analytics case studies, or experimenting with voice technology and automation. I believe in the power of combining creativity with technical skills to build solutions that are both innovative and user-friendly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="skills-wrapper">
+      <div class="skills-heading">
+        <h1>My <span>Skills</span></h1>
+      </div>
+      <div class="skills-columns">
+        <!-- Column 1 -->
+        <div class="skills-group">
+          <div class="skill"><p>Python</p><div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div></div>
+          <div class="skill"><p>SQL</p><div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></div>
+          <div class="skill"><p>Power BI</p><div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div></div>
+          <div class="skill"><p>Excel</p><div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div></div>
+        </div>
+  
+        <!-- Column 2 -->
+        <div class="skills-group">
+          <div class="skill"><p>HTML/CSS</p><div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div></div>
+          <div class="skill"><p>JavaScript</p><div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div></div>
+          <div class="skill"><p>Git & GitHub</p><div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects-wrapper">
+      <h1>My <span>Projects</span></h1>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" onclick="openModal('modal1')">
+          <img src="project1.png" alt="Project 1">
+          <h3 class="project-title">Sentiment Analysis</h3>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="project-card" onclick="openModal('modal2')">
+          <img src="project2_361x361.jpg" alt="Project 2">
+          <h3 class="project-title">Spotify Data Visualization</h3>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Sentimental Analysis on US Flight Reviews</h2>
+        <p>Developed an LSTM-based deep learning model to classify airline tweet sentiments as positive or negative
+
+            Preprocessed text data using tokenization, word embeddings, and sequence padding to improve model accuracy
+            
+            Implemented binary sentiment classification using TensorFlow, Keras, and NLP techniques for real-world applications
+            
+            Optimized model performance with dropout layers, hyperparameter tuning, and early stopping to prevent overfitting
+            
+            Built a real-time sentiment prediction system, enabling automated sentiment tracking for airline companies
+            
+            Tech Stack: Python, TensorFlow, Keras, Pandas, Matplotlib, Deep Learning, Sentiment Analysis, Sequence Modeling</p>
+        <a href="https://github.com/vinayp2219/Sentimental-Analysis" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Spotify Dashboard Analysis</h2>
+        <p>Designed an interactive Tableau dashboard analyzing 10,000+ Spotify tracks, uncovering music trends and artist performance insights
+
+            Developed key visualizations, including a Gantt bar chart (artist popularity vs. genre tempo), dual-axis butterfly chart (danceability vs. acousticness), and bar chart (track popularity distribution)
+            
+            Cleaned and processed 100,000+ rows of raw data using Excel and Tableau Prep, ensuring 99% data accuracy
+            
+            Conducted exploratory data analysis (EDA) to identify patterns in track features such as tempo, energy, danceability, and popularity
+            
+            Improved dashboard usability with intuitive navigation, interactive filters, and drill-down features, increasing stakeholder reporting efficiency by 40%
+            
+            Tech Stack: Tableau, Excel, Tableau Prep, Data Visualization, Data Cleaning, Trend Analysis</p>
+        <a href="https://github.com/vinayp2219/Spotify-Dashboard" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Education Section -->
+<section id="education" class="education-section">
+    <h2 class="section-title">Education</h2>
+    <div class="education-container">
+  
+      <!-- LPU -->
+      <div class="edu-card">
+        <div class="edu-img-container">
+          <img src="lpu.jpeg" alt="LPU Logo" class="edu-img">
+        </div>
+        <div class="edu-details">
+          <h3>Lovely Professional University, Punjab</h3>
+          <p>B.Tech in Computer Science and Engineering</p>
+          <p><strong>Duration:</strong> 2022 – Present</p>
+          <p><strong>CGPA:</strong> 7.01</p>
+        </div>
+      </div>
+  
+      <!-- Narayana Junior College -->
+      <div class="edu-card">
+        <div class="edu-img-container">
+          <img src="narayana.avif" alt="Narayana Junior College" class="edu-img">
+        </div>
+        <div class="edu-details">
+          <h3>Narayana Junior College, Hyderabad</h3>
+          <p>Intermediate (MPC)</p>
+          <p><strong>Duration:</strong> 2019 – 2021</p>
+          <p><strong>CGPA:</strong> 8.34</p>
+        </div>
+      </div>
+  
+      <!-- Narayana High School -->
+      <div class="edu-card">
+        <div class="edu-img-container">
+          <img src="school.avif" alt="Narayana High School" class="edu-img">
+        </div>
+        <div class="edu-details">
+          <h3>Narayana High School, Hyderabad</h3>
+          <p>10th Grade (Science)</p>
+          <p><strong>Duration:</strong> 2016 – 2017</p>
+          <p><strong>CGPA:</strong> 9.00</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+
+  <!-- Resume Section -->
+<!-- Resume Section -->
+<section id="resume" class="resume-section">
+    <div class="resume-text">
+      <h2>My Resume</h2>
+      <p>
+        Passionate about turning data into insights using tools like Python, SQL, and Excel.
+        Building strong foundations in data analysis, statistics, and machine learning through projects and continuous learning.
+      </p>
+      <a href="Vinay_Resume.pdf" download class="download-btn">Download Resume</a>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Contact <span>Me</span></h2>
+      <div class="contact-links">
+        <a href="mailto:vinaychintu523@gmail.com" target="_blank">
+          <img src="icons/gmail.svg" alt="Gmail"> vinaychintu523@gmail.com
+        </a>
+        <a href="tel:+919390975537">
+          <img src="icons/phone.svg" alt="Phone"> +91-9390975537
+        </a>
+        <a href="https://www.linkedin.com/in/pabbu-vinay" target="_blank">
+          <img src="icons/linkedin.svg" alt="LinkedIn"> Pabbu Vinay
+        </a>
+        <a href="https://github.com/vinayp2219" target="_blank">
+          <img src="icons/github.svg" alt="GitHub"> vinayp2219
+        </a>
+        <a href="https://instagram.com/__vi_nay" target="_blank">
+          <img src="icons/instagram.svg" alt="Instagram"> Vinay
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: ["Student", "Engineer", "Data Analyst"],
+      typeSpeed: 70,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+  <script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+  
+  // Optional: Close modal on outside click
+  window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+      event.target.style.display = "none";
+    }
+  }
+  </script>
+</body>
+</html>
