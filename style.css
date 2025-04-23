@@ -18,7 +18,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9); /* or any background */
+    background: linear-gradient(to right, rgb(255,255,255), rgb(250, 208, 164)); /* or any background */
     z-index: 9999;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* optional */
   }
@@ -92,6 +92,7 @@ section {
   padding: 4rem 2rem;
   position: relative;
   background-attachment: fixed;
+  background: linear-gradient(to right, rgb(255,255,255), rgb(250, 208, 164));
 }
 
 .main-container {
@@ -390,7 +391,7 @@ button:hover {
 
   #skills {
     padding: 80px 40px;
-    background: linear-gradient(to right, #fff6e5, #ffe0c3);
+    background: linear-gradient(to right, rgb(255,255,255), rgb(250, 208, 164));
     color: #333;
   }
   
@@ -458,7 +459,7 @@ button:hover {
 
   #projects {
     padding: 100px 20px;
-    background: linear-gradient(to right, #fff6e5, #ffe0c3);
+    background: linear-gradient(to right, rgb(255,255,255), rgb(250, 208, 164));
     text-align: center;
   }
   
@@ -564,7 +565,7 @@ button:hover {
   
   .resume-section {
     padding: 100px 20px;
-    background: linear-gradient(to right, #fff6eb, #ffe0c2);
+    background: linear-gradient(to right, rgb(255,255,255), rgb(250, 208, 164));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -610,7 +611,7 @@ button:hover {
 
   .contact-section {
     padding: 100px 20px;
-    background: linear-gradient(to right, #fff6eb, #ffe0c2);
+    background: linear-gradient(to right, rgb(255,255,255), rgb(250, 208, 164));
     text-align: center;
   }
   
@@ -660,7 +661,7 @@ button:hover {
 
   .education-section {
     padding: 80px 20px;
-    background: linear-gradient(to right, #fff6e5, #ffe0c3);
+    background: linear-gradient(to right, rgb(255,255,255), rgb(250, 208, 164));
     display: flex;
     flex-direction: column;
     align-items: center;
