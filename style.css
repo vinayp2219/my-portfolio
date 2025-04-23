@@ -273,6 +273,49 @@ button:hover {
   }
 } 
 
+@media (max-width: 768px) {
+  .photo-container {
+    width: 280px;
+    height: 280px;
+  }
+
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills-columns,
+  .education-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content,
+  .main-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn,
+  .download-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+
 /* Home section styling */
 #home {
     height: 100vh;
